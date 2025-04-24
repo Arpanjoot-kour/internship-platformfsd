@@ -1,0 +1,248 @@
+.management-dashboard {
+  padding: 20px;
+  height: 100%;
+  background-color: #f8f9fa;
+}
+
+.dashboard-header {
+  margin-bottom: 30px;
+}
+
+.dashboard-header h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-group label {
+  font-weight: 500;
+  color: #555;
+}
+
+.filter-group select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-width: 200px;
+  background-color: white;
+  color: #333;
+}
+
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.stats-section {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stats-section h3 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stats-card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.stats-card h4 {
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.stats-value {
+  color: #2196f3;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.chart-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.sdg-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.sdg-card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.sdg-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.sdg-header h4 {
+  color: #333;
+  margin: 0;
+}
+
+.sdg-title {
+  color: #666;
+  font-size: 14px;
+}
+
+.sdg-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.sdg-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-label {
+  color: #666;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.stat-value {
+  color: #2196f3;
+  font-weight: 600;
+}
+
+.sdg-progress {
+  height: 8px;
+  background: #eee;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.po-peo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 30px;
+}
+
+.po-peo-card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.po-peo-card h4 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #666;
+  font-size: 18px;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #f44336;
+  font-size: 18px;
+}
+
+/* Recharts Customization */
+.recharts-default-tooltip {
+  background-color: white !important;
+  border: 1px solid #ddd !important;
+  border-radius: 4px !important;
+  padding: 10px !important;
+}
+
+.recharts-tooltip-label {
+  color: #333 !important;
+  font-weight: 500 !important;
+}
+
+.recharts-tooltip-item {
+  color: #666 !important;
+}
+
+.recharts-legend-item {
+  cursor: pointer !important;
+}
+
+.recharts-legend-item-text {
+  color: #666 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .po-peo-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+  }
+
+  .filter-group select {
+    width: 100%;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sdg-grid {
+    grid-template-columns: 1fr;
+  }
+} 

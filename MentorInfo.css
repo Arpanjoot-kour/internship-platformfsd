@@ -1,0 +1,115 @@
+.mentor-info {
+  padding: 20px;
+}
+
+.mentor-info h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.mentor-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 30px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mentor-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.mentor-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.mentor-basic-info h3 {
+  margin: 0 0 5px 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.mentor-title {
+  color: #666;
+  margin: 0;
+}
+
+.mentor-details {
+  margin-bottom: 30px;
+}
+
+.detail-item {
+  margin-bottom: 15px;
+}
+
+.detail-item strong {
+  display: block;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.detail-item a {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+.detail-item a:hover {
+  text-decoration: underline;
+}
+
+.expertise-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.expertise-tag {
+  background-color: #e3f2fd;
+  color: #1976d2;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 14px;
+}
+
+.mentor-bio, .mentor-availability {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.mentor-bio h4, .mentor-availability h4 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.mentor-bio p, .mentor-availability p {
+  margin: 0;
+  color: #666;
+  line-height: 1.5;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+.error {
+  color: #d32f2f;
+  text-align: center;
+  padding: 20px;
+}
+
+.no-mentor {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  background: #f5f5f5;
+  border-radius: 8px;
+} 

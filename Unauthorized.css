@@ -1,0 +1,71 @@
+.unauthorized-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.unauthorized-content {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 90%;
+}
+
+.unauthorized-content h1 {
+  color: #dc3545;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.unauthorized-content p {
+  color: #6c757d;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.unauthorized-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.unauthorized-actions .btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.unauthorized-actions .btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.unauthorized-actions .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.unauthorized-actions .btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.unauthorized-actions .btn-secondary:hover {
+  background-color: #545b62;
+}
+
+@media (max-width: 480px) {
+  .unauthorized-actions {
+    flex-direction: column;
+  }
+  
+  .unauthorized-actions .btn {
+    width: 100%;
+  }
+} 

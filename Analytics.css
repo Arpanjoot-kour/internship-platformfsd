@@ -1,0 +1,135 @@
+.analytics {
+  padding: 20px;
+  height: 100%;
+}
+
+.analytics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.time-range-selector,
+.metric-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.time-range-selector label,
+.metric-selector label {
+  color: #555;
+  font-weight: 500;
+}
+
+.time-range-selector select,
+.metric-selector select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  color: #333;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.analytics-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chart-container h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.analytics-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.summary-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.summary-card h4 {
+  color: #666;
+  margin: 0 0 10px 0;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.summary-value {
+  color: #333;
+  font-size: 1.8em;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Recharts Customization */
+.recharts-default-tooltip {
+  background-color: white !important;
+  border: 1px solid #ddd !important;
+  border-radius: 4px !important;
+  padding: 10px !important;
+}
+
+.recharts-tooltip-label {
+  color: #333 !important;
+  font-weight: 500 !important;
+}
+
+.recharts-tooltip-item {
+  color: #666 !important;
+}
+
+.recharts-legend-item {
+  cursor: pointer !important;
+}
+
+.recharts-legend-item-text {
+  color: #666 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .analytics-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .analytics-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .time-range-selector,
+  .metric-selector {
+    width: 100%;
+  }
+
+  .time-range-selector select,
+  .metric-selector select {
+    flex: 1;
+  }
+
+  .analytics-summary {
+    grid-template-columns: 1fr;
+  }
+} 

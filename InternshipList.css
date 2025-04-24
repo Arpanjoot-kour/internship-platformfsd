@@ -1,0 +1,136 @@
+.internship-list {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.filters {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.filters select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  min-width: 200px;
+}
+
+.internships-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.internship-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.internship-card:hover {
+  transform: translateY(-5px);
+}
+
+.internship-card h2 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.internship-card h3 {
+  margin: 0 0 15px 0;
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.internship-card p {
+  margin: 0 0 20px 0;
+  color: #444;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.tags {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.tag-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tag-group h4 {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.tag.sdg {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.tag.po {
+  background-color: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.tag.peo {
+  background-color: #e8f5e9;
+  color: #388e3c;
+}
+
+.apply-button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: auto;
+}
+
+.apply-button:hover {
+  background-color: #1565c0;
+}
+
+.apply-button:disabled {
+  background-color: #bdbdbd;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #d32f2f;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+} 
